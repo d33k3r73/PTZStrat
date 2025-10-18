@@ -89,8 +89,7 @@ namespace NinjaTrader.NinjaScript.Strategies
 			}
 			else if (State == State.DataLoaded)
 			{
-				// Initialize the PTZ Daily Plan indicator
-//				ptzIndicator = PTZDailyPlanURLv2();
+				ptzIndicator = PropTraderz.PTZDailyPlanURLv2();
 				AddChartIndicator(ptzIndicator);
 
 				lastCheckPrice = 0;
