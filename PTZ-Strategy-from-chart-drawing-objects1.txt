@@ -176,12 +176,12 @@ namespace NinjaTrader.NinjaScript.Strategies
 		{
 			priceLevels.Clear();
 
-			if (ChartControl == null || ChartControl.ChartObjects == null)
+			if (ChartControl == null)
 				return;
 
 			try
 			{
-				foreach (var drawObject in ChartControl.ChartObjects)
+				foreach (var drawObject in DrawObjects)
 				{
 					if (drawObject == null)
 						continue;
